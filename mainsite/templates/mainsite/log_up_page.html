@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" class="main_html">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7 shrink-to-fit=no">
+        <meta name="description" content="{{ discripshin }}">
+        <meta name="author" content="{{ author_name }}">
+        <title>{{page_title}}</title>
+        {% load static %}
+        <link href="../../static/mainsite/css/style.css" rel="stylesheet">
+        <!--<link href="{% static 'mainsite/css/style.css' %}" rel="stylesheet">-->
+    </head>
+    <body>
+        <div style="position: absolute; width: 100%; top: 7%;">
+            <div style="margin-left: auto; margin-right: auto; width: 70%; max-width: 550px;">
+                <div style="background-color: rgba(255, 255, 255, 0.14); width: 100%; background-size: 100; border-radius: 10px; text-align: center; direction: rtl; color: #483e1d; padding-bottom: 25px; box-shadow: 1px 1px 44px 0px #000000; min-width: 420px;">
+                    <div style="background-color: rgba(0, 85, 50, 0.6); border-top-left-radius: 10px; border-top-right-radius: 10px; padding-bottom: 3px;">
+                        <h2 style="padding-top: 15px; font-weight: bold; font-family: Tahoma , arial; font-size: 18px; color: #e9e3d5; text-shadow: 1px 1px 17px #ffffff;">قم بأنشاء قسمك الخاص على موقع أحمد&nbsp;</h2>
+                    </div>
+                    <h2 style="margin-bottom: 9px;">اسم المستخدم</h2>
+                    <form method="post" action="/log_up/">
+                        {% csrf_token %}
+                        <input name="user_name" style="width: 82%; height: 38px; padding: 5px 16px 5px 5px; font-size: 23px; border-radius: 5px;" type="text">
+                        <h2 style="margin-bottom: 9px; margin-top: 9px;">كلمة المرور</h2>
+                        <div style="width: 100%; margin-bottom: 17px;">
+                            <input id="input_1" name="password" style="width: 68%; height: 38px; padding: 5px 16px 5px 5px; font-size: 23px; border-radius: 5px; float: right; margin-left: 0; margin-bottom: 19px; margin-right: 7%;" type="password">
+                            <div class="eye_button">
+                                <div class="hide_eye_pass" style="display: block;"></div>
+                                <div class="eye_passwors" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div onclick="submet();" class="button_input" style="clear: both; margin-bottom: 22px;">انشاء حساب جديد</div>
+                        <h2 style="margin-bottom: 9px; margin-top: 9px; padding-right: 2%; padding-left: 2%; color: #271515;">أذا كنت تمتلك حساباً على موقع أحمد بافعل&nbsp;فيمكنك تسجيل الدخول اليه بدلاً من أنشاء حساب جديد</h2>
+                        <a href="/"><div class="button_input" style="clear: both;">تسجيل الدخول إلى حسابي</div></a>
+                        <input id="form_sub" type="submit" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function submet(){
+              const password_input = document.querySelector("#input_1") ;
+              password_input.type = "password" ;
+              const main_form = document.getElementById('form_sub') ;
+               main_form.click() ;
+        }
+   
+           //هذا الكود من أجل أزرار أخفاء وأظهار كلمة السر
+           
+           const list_btn_password = document.getElementsByClassName('eye_button');
+           for(let i = 0 ; i < list_btn_password.length ; i ++ ){
+               list_btn_password[i].addEventListener('click',function(){
+                   const open_eye = this.children[1] ;
+                   const close_eye = this.children[0] ;
+                   const input_eye = this.parentNode.children[0] ;
+                   if(close_eye.style.display == "block"){
+                       close_eye.style.display = "none" ;
+                       open_eye.style.display = "block" ;
+                       input_eye.type = "text" ;
+                   } else {
+                       close_eye.style.display = "block" ;
+                       open_eye.style.display = "none" ;
+                       input_eye.type = "password" ;
+                   }
+                 
+               })
+           }
+       </script>
+</html>

@@ -1,0 +1,74 @@
+.main_header {
+}
+
+.main_button_list_1 {
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-image: url('../img/white_menu_button.png');
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+.main_html {
+    background-image: url('../img/eric-jacob-G0miZ5OYaXI-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+input[ type = text ]:focus {
+    background-color: rgba(253, 255, 204, 0.37);
+    color: #205021;
+    direction: rtl;
+    text-align: center;
+    border-width: 1px;
+    border-color: rgba(111, 99, 59, 0.65);
+}
+
+input[ type = text ] {
+    background-color: rgba(255, 255, 255, 0.28);
+    border: 0 none #000000;
+    text-align: center;
+    direction: rtl;
+}
+
+.button_input {
+    width: 82%;
+    height: 38px;
+    padding: 11px 16px 5px 5px;
+    font-size: 27px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    vertical-align: middle;
+    border: 2px solid rgba(78, 70, 31, 0.24);
+    font-weight: bolder;
+    color: #183415;
+}
+
+.button_input:hover {
+    color: #ffffff;
+    background-color: #183415;
+    opacity: 0.7;
+    width: 1;
+}
+
+.button_input:active {
+    background-color: rgba(86, 81, 48, 0.35);
+    color: #000000;
+    text-shadow: 1px 1px 13px #7d744d;
+}
+
+.eye_passwors {
+    background-image: url('../img/view1.png');
+    background-size: 100% 100%;
+    width: 85%;
+    height: 30px;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}

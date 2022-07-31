@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8 shrink-to-fit=no">
+        <meta name="description" content="{{ discripshin }}">
+        <meta name="author" content="{{ author_name }}">
+        <title>{{page_title}}</title>
+        <link href="../../static/mainsite/css/main_page.css" rel="stylesheet">
+        <!--
+         {% load static %}
+         <link href="{% static 'mainsite/css/main_page.css' %}" rel="stylesheet">
+   -->
+    </head>
+    <body>
+        <h1>أسف يا خيي يوجد مستخدم آخر بنفس الأسم</h1>
+        <a href="/log_in/">عودة للصفحة الرأيسية</a>
+        <h1 style="color: tomato">{{ error_massage }}</h1>
+    </body>     
+</html>

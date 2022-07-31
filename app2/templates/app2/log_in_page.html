@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" class="main_html">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta name="description" content="{{ discripshin }}">
+        <meta name="author" content="{{ author_name }}">
+        <title>{{page_title}}</title>
+        {% load static %}
+        <!--<link href="../../static/mainsite/css/style.css" rel="stylesheet">-->
+        <link href="{% static 'mainsite/css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div style="position: fixed; width: 100%; top: 7%; min-width: 480px;">
+            <div style="margin-left: auto; margin-right: auto; width: 70%; max-width: 550px;">
+                <div style="background-color: rgba(84, 84, 84, 0.18); width: 100%; background-size: 100; border-radius: 10px; text-align: center; direction: rtl; color: #483e1d; padding-bottom: 25px; box-shadow: 1px 1px 44px 8px #413c1c;">
+                    <div style="background-color: rgba(24, 52, 21, 0.6); height: 58px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                        <h2 style="padding-top: 15px; font-weight: bold; font-family: Tahoma , arial; font-size: 18px; color: #e9e3d5; text-shadow: 1px 1px 17px #ffffff;">قم بتسجيل الدخول إلى قسمك</h2>
+                    </div>
+                    <h2 style="margin-bottom: 9px;">اسم المستخدم</h2>
+                    <form method="post" action="">
+                        <input name="user_name" style="width: 82%; height: 38px; padding: 5px 16px 5px 5px; font-size: 23px; border-radius: 5px;" type="text">
+                        <h2 style="margin-bottom: 9px; margin-top: 9px;">كلمة المرور</h2>
+                        <div style="width: 100%; margin-bottom: 17px;">
+                            <input name="password" style="width: 68%; height: 38px; padding: 5px 16px 5px 5px; font-size: 23px; border-radius: 5px; float: right; margin-left: 0; margin-bottom: 19px; margin-right: 7%;" type="password">
+                            <div class="eye_button">
+                                <div class="eye_passwors"></div>
+                            </div>
+                        </div>
+                        <div onclick="submet();" class="button_input" style="clear: both; margin-bottom: 24px;">تسجيل الدخول</div>
+                        <h2 style="margin-bottom: 9px; margin-top: 9px;">لا تمتلك حساباً<br>قم بأنشاء حساب جديد على موقع أحمد</h2>
+                        <a href="logup/"><div class="button_input" style="clear: both;">أنشاء حساب جديد على موقع أحمد</div></a>
+                        <input id="form_sub" type="submit" style="display: none;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function submet(){
+        const main_form = document.getElementById('form_sub') ;
+        main_form.click() ;
+        }
+        
+    </script>
+</html>

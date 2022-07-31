@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    min-width: 350px;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: right;
+    direction: rtl;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.main_image {
+    background-size: 100% 100%;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    height: 88%;
+}
+
+.main_image_1 {
+    background-size: 100% 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main_button_list {
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+#close_button_list {
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+/* هذا الكود هو من أجل ألغاء أشرطة التمرير في العناصر */
+.hide_scrollbar::-webkit-scrollbar {
+    display: none ;
+}
+
+.hide_scrollbar {
+    -ms-overflow-style: none ;
+
+    /* ايدج و IE */
+    scrollbar-width: none ;
+
+    /* فاير فوكس */
+}
+
+#main_button_list_img_1 {
+    background-image: url('../img/close.png');
+}
+
+#main_button_list_img {
+    background-image: url('../img/white_menu_button.png');
+}
+
+.user_name_img_1 {
+    background-image: url('../img/user%20(3).png');
+}
+
+.image_1 {
+    background-image: url('../img/gear.png');
+}
+
+.big_button_list {
+    height: 60px;
+    width: 33.33%;
+    border-left: 1px solid #cccccc;
+    text-align: center;
+    direction: rtl;
+    font-size: 24px;
+    padding-top: 13px;
+    font-weight: bold;
+    color: #394135;
+}
+
+.big_button_list:hover {
+    color: #feffce;
+    background-color: #7c9361;
+}
+
+.big_button_list:active {
+    background-color: #c3ff9d ;
+    color: #394135;
+}
+
+.image_2 {
+    background-image: url('../img/cmd.png');
+    width: 9;
+}
+
+.main_btn_header:hover {
+    background-color: #91cb71 ;
+}
+
+.main_btn_header:active {
+    background-color: rgba(24, 193, 30, 0.53);
+}
+
+.close_btn_header {
+    background-color: #91cb71;
+}
+
+.close_btn_header:hover {
+    background-color: rgba(24, 193, 30, 0.53);
+}
+
+.close_btn_header:active {
+    background-color: #91cb71;
+}
+
+.row_list_elem:hover {
+    background-color: rgba(216, 216, 216, 0.53);
+}
+
+.row_list_elem:active {
+    background-color: rgba(144, 255, 125, 0.63);
+}
+
+.sticky {
+    position: -webkit-sticky ;
+    position: sticky ;
+
+    /* من أجل سفاري */
+    top: 0 ;
+}
+
+.image3 {
+    background-image: url('../img/home-icon-silhouette.png');
+}
+
+.image4 {
+    background-image: url('../img/worldwide.png');
+}
+
+.image5 {
+    background-image: url('../img/messenger.png');
+}
+
+.image6 {
+    background-image: url('../img/users.png');
+}
+
+.image7 {
+}
+
+.show_head33 {
+    background-image: url('../img/254434.png');
+}
